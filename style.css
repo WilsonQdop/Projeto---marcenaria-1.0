@@ -8,7 +8,7 @@
 * {
     padding: 0px;
     margin: 0px;
-
+    font-family: var(--font0);
 }
 
 :root {
@@ -27,130 +27,116 @@
 }
 
 body {
-   height: 100vh;
+   width: 100%;
 }
 header {
     background-color: var(--cor1);
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+.nome {
     color: white;
-    display: flex;
-    padding-top: 20px;
-    width: 100% vh;
+    font-size: 1.3rem;
 }
-header h1 {
-    padding: 10px;
-    margin-left: 45px;
-    margin-bottom: 0.7rem;
-    font-family: var(--font0);
-
+.nome h1 {
+    text-align: center;
 }
-form {
-    display: flex;
-    padding: 15px;
-    margin-left: 120px;
-    margin-top: 15px;
-}
-#procure {
-    padding: 2px;
-    min-width: 418px;
-    border-radius: 5px;
-    border: none;
-   
-}
-.input-wrapper {
-    padding:    8px 12px;
+.menu {
     display: flex;
     align-items: center;
-    background-color: white;
-    gap: 10px;
+}
+.menu > ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+} 
+.nav-item {
+    margin: 0 15px
+
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.acesse-button {
+    display: flex;
+    align-items: center;
+}
+ #button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    background-color: var(--cor0);
+    padding: 15px;
     border-radius: 10px;
+    font-weight: 500;
 }
-.input-wrapper input {
-    background-color: white;
-    border: none;
-    color: black;
-    font-size: 20px;
-}
-.input-wrapper i {
-    color: rgba(0, 0, 0, 0.479);
-    font-size: 20px;
-}
-.input-wrapper input:focus-visible {
-    outline: none;
-}
+
 .cabeçalho > p {
     margin-left: 20px;
     font-size: 1.2em;
     font-family: var(--font0);
     font-weight: bold;
 }
-#shop {
-    margin-left: 150px;
-    padding: 50px;
-    
-    font-size: 3em;
-    color: white;
+.mobile-menu-icon {
+    display: none;
     align-items: center;
     justify-content: center;
 }
-nav {
-    background-color: var(--cor1);
-    text-align: center;
-    line-height: 70px;
-    padding-top: 10px;
-    font-family: var(--font0);
-}
-nav  > a {
-    padding: 18px;
-    color: var(--cor5);
-    margin-left: 10px;
-    margin-right: 10px;
-    
-    text-decoration: none;
-    font-size: 1.1rem;
-    
-}
-nav > a:hover {
-    
-    border-radius: 8px;
-    background-color: var(--cor2);
-    color: var(--cor3);
-    transition: 0.5s;
+.mobile-menu {
+    display: none;
 }
 
-#buttom{   
-    line-height: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    background-color: var(--cor0);
-    padding: 20px;
-    color: white;
-    border-radius: 10px;
-   box-shadow: 2px 2px 4px black;
-}
-#buttom:hover {
-    background-color: rgba(0, 0, 0, 0.274);
-    transform: scaleY(1.2);
+@media screen and (max-width: 730px) {
+    .navbar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    } 
+    .acesse-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+        
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+
+    }
+    .mobile-menu .acesse-button {
+        display: block;
+        padding: 1rem 2rem;
+        text-align: center;
+        
+    }
+    .mobile-menu .acesse-button .button {
+        width: 100%;
+        
+    }
+    .open {
+        display: block;
+    }
 }
 
-main {
-    background-color: white;
 
-}
-main h1 {
-    text-align: center;
-    font-family: var(--font0);
-    font-weight: bold;
-}
-#container-moveis {
-display: flex;
-}
-.moveis > img {
-    width: 400px;
-    height: 400px;
-   padding-left: 40px;
-}
-.moveis > p {
-    padding-left: 15px;
-    max-width: 400px;
-    text-align: center;
-}
+
