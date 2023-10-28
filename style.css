@@ -94,6 +94,19 @@ header {
     display: none;
 }
 
+main {
+    background-color: white;
+}
+.apresentacao {
+    text-align: center;
+    margin-top: 20px;
+}
+.principal {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+
 @media screen and (max-width: 730px) {
     .navbar {
         padding: 1.5rem 4rem;
@@ -137,6 +150,7 @@ header {
     .open {
         display: block;
     }
+    
 }
 
 
