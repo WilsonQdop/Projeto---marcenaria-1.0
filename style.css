@@ -45,6 +45,9 @@ header {
 .nome h1 {
     text-align: center;
 }
+.menu P {
+    text-align: center;
+}
 .menu {
     display: flex;
     align-items: center;
