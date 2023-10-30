@@ -95,15 +95,19 @@ header {
 }
 
 main {
-    background-color: white;
 }
-.apresentacao {
-    text-align: center;
-    margin-top: 20px;
+ .home {
+    min-height: 100vh;
+    align-items: center;
+    background: url('img/moveis-jardim.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
 .principal {
     font-size: 1.5rem;
-    margin: 5px;
+
+    text-align: center;
 }
 
 
