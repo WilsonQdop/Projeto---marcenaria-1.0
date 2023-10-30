@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @font-face {
     font-family: 'municipal';
     src: url('fonts/Municipal.ttf') format('truetype');
@@ -8,7 +9,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: var(--font0);
+    
 }
 
 :root {
@@ -19,7 +20,7 @@
     --cor4: #332E29;
 
     --font0: 'Arvo', serif;
-    --font1: 'municipal';
+    --font1: 'Fira Sans', sans-serif;
 }
 
 .externo::after {
@@ -31,7 +32,8 @@ body {
 }
 header {
     background-color: var(--cor1);
-    
+    border-bottom: 1px solid var(--cor4);
+    font-family: var(--font0);
 }
 .navbar {
     display: flex;
@@ -55,6 +57,15 @@ header {
     justify-content: center;
     list-style: none;
 } 
+.menu a {
+    display: inline-block;
+    color: white;
+    font-size: 1.2rem;
+    transition: .5s ease;
+}
+.menu a:hover {
+transform: scale(1.1);
+}
 .nav-item {
     margin: 0 15px
 
@@ -68,6 +79,10 @@ header {
 .acesse-button {
     display: flex;
     align-items: center;
+    transition: .5s ease;
+}
+.acesse-button a:hover {
+    transform: scale(1.1);
 }
  #button {
     color: white;
@@ -77,6 +92,7 @@ header {
     padding: 15px;
     border-radius: 10px;
     font-weight: 500;
+  
 }
 
 .cabeçalho > p {
@@ -96,18 +112,39 @@ header {
 
 main {
 }
- .home {
-    min-height: 100vh;
+ section {
+    display: flex;
+    min-height:calc(100vh - 100px);
     align-items: center;
-    background: url('img/moveis-jardim.jpg') no-repeat;
+    background: url('img/beautiful-shot-modern-house-kitchen-shelves-drawers.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+   font-family: var(--font1);
+}
+.redor {
+    padding: 20px;
+    background-color: var(--cor4)
 }
 
 .principal {
+    font-family: var(--font1);
+    padding: 20px;
+    Letter-spacing:2px;
+    color: white;
+    bottom: 100px;
+    position: relative;
+}
+.principal h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.principal p {
+    width: 350px;
     font-size: 1.5rem;
-
-    text-align: center;
+    color: #b3b3ae;
+    font-weight: bold;
+    padding: 5px;
 }
 
 
@@ -154,7 +191,10 @@ main {
     .open {
         display: block;
     }
-    
+    section {
+        background: url('img/empty-modern-room-with-furniture.jpg') no-repeat;
+        background-size: cover;
+    }
 }
 
 
