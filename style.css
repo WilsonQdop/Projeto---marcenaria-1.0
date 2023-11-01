@@ -34,6 +34,7 @@ header {
     background-color: var(--cor1);
     border-bottom: 1px solid var(--cor4);
     font-family: var(--font0);
+
 }
 .navbar {
     display: flex;
@@ -149,6 +150,9 @@ main {
 
 
 @media screen and (max-width: 730px) {
+    body {
+        width: 100%;
+    }
     .navbar {
         padding: 1.5rem 4rem;
     }
