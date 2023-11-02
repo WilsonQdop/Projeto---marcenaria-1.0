@@ -199,6 +199,9 @@ main {
         background: url('img/empty-modern-room-with-furniture.jpg') no-repeat;
         background-size: cover;
     }
+    .principal p {
+        font-size: 1.2rem;
+    }
 }
 
 
